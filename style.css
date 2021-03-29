@@ -183,3 +183,29 @@ a:hover {
     margin: 1.5rem auto;
     border: 1px solid #d2ba87;
 }
+
+/* Footer styles  */
+footer {
+    height: 5rem;
+    width: 100%;
+    display: table;
+    text-align: center;
+    padding: 1rem;
+    background-color: #606060;
+    color: white;
+    font-size: 0.8rem;
+    font-family: "Mulish", sans-serif;
+}
+
+.footer {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer p small {
+    font-size: 0.9rem;
+}
