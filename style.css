@@ -1,0 +1,66 @@
+/* General styles */
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+ul,
+p,
+hr,
+img,
+main {
+    margin-bottom: 1.5rem;
+}
+
+section {
+    width: 95%;
+    margin: 1.5rem auto;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+body {
+    background: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png");
+    font-family: "Libre Baskerville", serif;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: #444349;
+}
+
+h1,
+h2 {
+    font-family: "Great Vibes", cursive;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+img {
+    height: 7.5rem;
+}
+
+.program,
+.questions-and-answers {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    color: #d2ba87;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #bd806e;
+}
+
+a:hover {
+    color: #eda087;
+    transition: color 0.15s ease-in-out;
+}
