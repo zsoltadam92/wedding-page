@@ -64,3 +64,71 @@ a:hover {
     color: #eda087;
     transition: color 0.15s ease-in-out;
 }
+
+/* Header styles */
+.cover {
+    background: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg")
+        no-repeat 70% center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: table;
+}
+
+.wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.text-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    padding: 0.5rem 0;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.text-container p {
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.125rem;
+}
+
+.text-container .tagline {
+    font-size: 1.3rem;
+}
+
+.text-container hr {
+    display: block;
+    width: 12.5rem;
+    margin: 0.5rem auto;
+    border: 1px solid hsla(0, 0%, 100%, 0.9);
+}
+
+.text-container h1 {
+    color: #d2ba87;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.date::before,
+.date::after {
+    display: inline-block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 1.5rem;
+    vertical-align: middle;
+    margin: 0 0.5rem;
+}
+
+/* Locations styles */
+.location-box p {
+    font-family: "Mulish", sans-serif;
+    margin: 0;
+}
+
+.location-box hr {
+    display: block;
+    width: 27%;
+    margin: 1.5rem auto;
+    border: 1px solid #444349;
+}
