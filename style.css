@@ -82,7 +82,7 @@ a:hover {
 }
 
 .text-container {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    background: rgba(0, 0, 0, 0.6);
     padding: 0.5rem 0;
     color: rgba(255, 255, 255, 0.9);
 }
