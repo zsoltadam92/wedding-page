@@ -50,7 +50,7 @@ img {
 
 .program,
 .questions-and-answers {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    background: rgba(0, 0, 0, 0.6);
     color: #d2ba87;
     width: 100%;
 }
@@ -76,13 +76,21 @@ a:hover {
     display: table;
 }
 
+@media (min-width: 768px) {
+    .cover {
+        background: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg")
+            no-repeat center;
+        background-size: cover;
+    }
+}
+
 .wrapper {
     display: table-cell;
     vertical-align: middle;
 }
 
 .text-container {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.5);
     padding: 0.5rem 0;
     color: rgba(255, 255, 255, 0.9);
 }
@@ -120,6 +128,20 @@ a:hover {
     margin: 0 0.5rem;
 }
 
+@media (min-width: 768px) {
+    .text-container {
+        max-width: 700px;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+    .text-container h1 {
+        font-size: 7rem;
+    }
+    .tagline {
+        text-transform: uppercase;
+    }
+}
+
 /* Locations styles */
 .location-box p {
     font-family: "Mulish", sans-serif;
@@ -131,6 +153,22 @@ a:hover {
     width: 27%;
     margin: 1.5rem auto;
     border: 1px solid #444349;
+}
+
+@media (min-width: 768px) {
+    .location-box {
+        float: left;
+        width: 30%;
+        margin: 1.65%;
+    }
+    .location::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .location-box hr {
+        display: none;
+    }
 }
 
 /* Program styles */
@@ -146,6 +184,13 @@ a:hover {
 .program-box p {
     font-style: italic;
     margin: 1.5rem 0;
+}
+
+@media (min-width: 768px) {
+    .program-box {
+        width: 410px;
+        margin: 0 auto;
+    }
 }
 
 /* Gifts styles */
@@ -184,6 +229,25 @@ a:hover {
     border: 1px solid #d2ba87;
 }
 
+@media (min-width: 768px) {
+    .question-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .question-box {
+        width: 30%;
+        padding: 1.5rem;
+        margin: 0.5rem;
+    }
+    .question-box h3 {
+        text-align: left;
+    }
+    .question-box hr {
+        display: none;
+    }
+}
+
 /* Footer styles  */
 footer {
     height: 5rem;
@@ -193,7 +257,7 @@ footer {
     padding: 1rem;
     background-color: #606060;
     color: white;
-    font-size: 0.8rem;
+    /* font-size: 0.8rem; */
     font-family: "Mulish", sans-serif;
 }
 
@@ -208,65 +272,4 @@ footer {
 
 .footer p small {
     font-size: 0.9rem;
-}
-
-/* media queries */
-
-@media (min-width: 768px) {
-    /* header  */
-    .cover {
-        background: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg")
-            no-repeat center;
-        background-size: cover;
-    }
-    .text-container {
-        max-width: 700px;
-        padding: 1rem;
-        margin: 0 auto;
-    }
-    .text-container h1 {
-        font-size: 7rem;
-    }
-    .tagline {
-        text-transform: uppercase;
-    }
-
-    /* location */
-    .location::after {
-        content: "";
-        display: block;
-        clear: both;
-    }
-    .location-box {
-        float: left;
-        width: 30%;
-        margin: 1.65%;
-    }
-    .location-box hr {
-        display: none;
-    }
-
-    /* Program  */
-    .program-box {
-        width: 410px;
-        margin: 0 auto;
-    }
-
-    /* questions-and-answers */
-    .question-container {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    .question-box {
-        width: 30%;
-        padding: 1.5rem;
-        margin: 0.5rem;
-    }
-    .question-box h3 {
-        text-align: left;
-    }
-    .question-box hr {
-        display: none;
-    }
 }
